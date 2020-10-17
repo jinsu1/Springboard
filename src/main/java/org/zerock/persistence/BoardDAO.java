@@ -29,5 +29,7 @@ public interface BoardDAO {
 	public int listSearchCount(SearchCriteria cri)throws Exception;
 	
 	public void boardViewcnt(int bno)throws Exception;
+
+
 	  
 }

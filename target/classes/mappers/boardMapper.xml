@@ -118,6 +118,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  
 </select> 
 
+<update id="updateReplyCnt">
+  update tbl_board set replycnt = replycnt + #{amount} where bno = #{bno}
+</update>
+
+
+<update id="updateViewCnt">
+  update tbl_board set viewcnt = viewcnt +1 where bno = #{bno}
+</update>
+
 <!-- 게시판 조회수 -->
     <update id="boardViewcnt" parameterType="int">
     	UPDATE tbl_board SET
